@@ -1,0 +1,14 @@
+{
+  "currency": "USD",
+  "source": "test fixture",
+  "plans": [
+    { "name": "Top plan, yearly", "price": 1325.87, "period": "year", "credits": 4000, "creditsPer": "28d" },
+    { "name": "Top plan, every 28 days", "price": 119.99, "period": "28d", "credits": 4000 }
+  ],
+  "topups": [ { "credits": 75, "price": 3.99 }, { "credits": 200, "price": 9.99 }, { "credits": 550, "price": 24.99 }, { "credits": 1350, "price": 59.99 } ],
+  "actions": [
+    { "name": "8 s clip with sound", "credits": 80, "vendorCost": 1.2 },
+    { "name": "15 s clip at 1080p", "credits": 390, "vendorCost": 10.23 }
+  ],
+  "volume": [ { "action": "8 s clip with sound", "perMonth": 30, "attemptsPerUsable": 2 } ]
+}

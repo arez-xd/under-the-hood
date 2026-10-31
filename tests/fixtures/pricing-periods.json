@@ -1,0 +1,21 @@
+{
+  "currency": "USD",
+  "source": "test fixture",
+  "plans": [
+    { "name": "Weekly app", "price": 6.99, "period": "week", "credits": 100, "rollover": false },
+    { "name": "Free daily", "price": 0, "period": "month", "credits": 50, "creditsPer": "day", "rollover": false },
+    { "name": "Unlimited", "price": 30, "period": "month", "credits": "unlimited" },
+    { "name": "Quarterly", "price": 60, "period": "quarter", "credits": 3000, "rollover": false }
+  ],
+  "topups": [ { "credits": 100, "price": 5 }, { "credits": 500, "price": 20 } ],
+  "actions": [
+    { "name": "image", "credits": 4, "vendorCost": 0.04 },
+    { "name": "chat message", "credits": 0, "price": 0.01, "vendorCost": { "tokensIn": 2000, "tokensOut": 500, "perMillionIn": 3, "perMillionOut": 15 } },
+    { "name": "two-step pipeline", "credits": 30, "vendorCost": [ { "call": "generate", "cost": 0.2 }, { "call": "texture", "cost": 0.15 } ] }
+  ],
+  "volume": [
+    { "action": "image", "perMonth": 200 },
+    { "action": "chat message", "perMonth": 300 },
+    { "action": "two-step pipeline", "perMonth": 10, "attemptsPerUsable": 2 }
+  ]
+}

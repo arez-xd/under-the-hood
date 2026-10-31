@@ -1,0 +1,5 @@
+interface:
+  display_name: "Under the Hood"
+  short_description: "Check a service before you pay: what runs underneath, what works, what it costs"
+  skill_file: "skills/under-the-hood/SKILL.md"
+  default_prompt: "Use $under-the-hood to check this service for my task before I pay for it."

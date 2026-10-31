@@ -1,0 +1,6 @@
+{"arm":"service","task":"t01","ttft_ms":900,"total_ms":9000,"output_chars":1600,"score":0}
+{"arm":"service","task":"t02","ttft_ms":950,"total_ms":9500,"output_chars":1700,"score":1}
+{"arm":"large","task":"t01","ttft_ms":2400,"total_ms":30000,"output_chars":1650,"score":1}
+{"arm":"large","task":"t02","ttft_ms":2600,"total_ms":32000,"output_chars":1750,"score":1}
+{"arm":"small","task":"t01","ttft_ms":880,"total_ms":8800,"output_chars":1600,"score":0}
+{"arm":"small","task":"t02","ttft_ms":920,"total_ms":9300,"output_chars":1680,"score":1}

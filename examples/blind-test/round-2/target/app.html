@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Kadra Studio — App</title><style>body{font:16px/1.5 system-ui,sans-serif;margin:0;color:#111}header,main,footer{max-width:960px;margin:0 auto;padding:16px}nav a{margin-right:16px}.badge{display:inline-block;padding:4px 10px;border-radius:99px;background:#e7f8ee;color:#0a6b3a;font-weight:600}.small{font-size:12px;color:#666}video{width:180px;border-radius:12px}.plan{border:1px solid #ddd;border-radius:12px;padding:16px;margin:8px 0}button[disabled]{opacity:.5}</style></head><body><header><nav><a href="/">Kadra Studio</a><a href="/pricing">Pricing</a><a href="/app">Open app</a><a href="/help/">Help</a></nav></header><main><h1>Composer</h1><p class="small">Signed in as test-user@example.com · Plan: Pro · <span id="bal">Balance: …</span></p>
+<label>Prompt <input id="prompt" value="A perfume bottle on wet black stone, slow push-in, studio light" size="60"></label><br>
+<label>Model <select id="model"><option value="seedance-2-pro">Seedance 2.0 Pro</option></select></label>
+<label>Aspect <select id="aspect"><option>9:16</option><option>16:9</option></select></label>
+<label>Duration <select id="duration"><option value="10">10 s</option><option value="5">5 s</option></select></label>
+<button id="generate">Generate</button>
+<div id="result"></div>
+<h2>Export</h2><button id="exp1080">Export 1080p</button> <button id="exp4k" disabled title="Coming soon">Export 4K — Coming soon</button>
+<h2>Tools</h2><button id="bg">Background removal <span class="small">Beta</span></button> <div id="bgres"></div>
+<h2>Assistant</h2><input id="msg" value="Which model are you?" size="40"> <button id="ask">Ask</button><div id="reply"></div></main><footer class="small">© 2026 Kadra AI Inc. · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="/refund">Refunds</a></footer>
+<script src="/assets/index-k4d7.js"></script>
+<script>
+kadra.credits().then(c=>document.getElementById("bal").textContent="Balance: "+c.balance+" credits");
+document.getElementById("generate").onclick=async()=>{const r=await kadra.generate({prompt:document.getElementById("prompt").value,duration:document.getElementById("duration").value,aspect:document.getElementById("aspect").value});document.getElementById("result").innerHTML='<p>Done · '+r.credits_charged+' credits</p><video src="'+r.video.url+'" controls muted></video>'};
+document.getElementById("bg").onclick=async()=>{const r=await kadra.removeBg();document.getElementById("bgres").innerHTML='<img src="'+r.image.url+'" width="120"> done'};
+document.getElementById("ask").onclick=async()=>{const r=await kadra.ask(document.getElementById("msg").value);document.getElementById("reply").innerHTML=kadra.md(r.reply)};
+document.getElementById("exp1080").onclick=()=>{document.getElementById("result").insertAdjacentHTML("beforeend","<p>Export ready: /media/v3/9c21/output.mp4</p>")};
+</script></body></html>

@@ -1,0 +1,35 @@
+name: A new tell or vendor pattern
+description: A builder, backend, model host, payment or analytics service the tell tables don't know yet, or a pattern that changed.
+labels: [tells]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [Builder platform, Framework or hosting, Backend or auth, Model vendor or host, Agent or orchestration, Payments, Analytics or session recording, Content credentials, Other]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Service or pattern
+      placeholder: e.g. a model host that serves partner models under the partner's prefix
+    validations:
+      required: true
+  - type: textarea
+    id: tell
+    attributes:
+      label: The tell
+      description: Hosts in requests, strings in code, headers, asset paths, metadata fields. Say whether it is seen happening (direct) or only present in code (indirect).
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Where to confirm it
+      description: The vendor's own documentation, or a public page of your own product. Please don't name a third-party service as an example.
+  - type: input
+    id: seen
+    attributes:
+      label: Date seen
+      placeholder: 2026-10-31

@@ -1,0 +1,21 @@
+{
+  "currency": "USD",
+  "source": "https://example.com/pricing, read 2026-10-31",
+  "plans": [
+    { "name": "Free", "price": 0, "period": "month", "credits": 100, "creditsPer": "month", "rollover": false, "commercial": false, "note": "results under a public license" },
+    { "name": "Pro", "price": 20, "period": "month", "credits": 1000, "creditsPer": "month", "rollover": false, "commercial": true },
+    { "name": "Pro, yearly", "price": 192, "period": "year", "credits": 1000, "creditsPer": "month", "rollover": false, "commercial": true }
+  ],
+  "topups": [
+    { "credits": 500, "price": 10 },
+    { "credits": 2000, "price": 35 }
+  ],
+  "actions": [
+    { "name": "image to 3D with texture", "credits": 30, "vendorCost": 0.4, "vendorSource": "https://vendor.example/pricing, read 2026-10-31" },
+    { "name": "remesh to 30k triangles", "credits": 5 }
+  ],
+  "volume": [
+    { "action": "image to 3D with texture", "perMonth": 40, "attemptsPerUsable": 2 },
+    { "action": "remesh to 30k triangles", "perMonth": 40, "attemptsPerUsable": 1 }
+  ]
+}

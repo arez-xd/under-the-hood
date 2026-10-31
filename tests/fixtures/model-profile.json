@@ -1,0 +1,5 @@
+{
+  "model": "A video model at 720p (test profile)",
+  "source": "test fixture",
+  "video": { "resolutions": ["1280x720", "720x1280"], "fps": [24], "durations": [4, 6, 8], "codecs": ["avc1"], "audio": true }
+}

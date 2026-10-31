@@ -1,0 +1,15 @@
+{
+  "model": "<model name and version as the vendor writes it>",
+  "source": "<vendor docs URL, read YYYY-MM-DD>",
+  "video": {
+    "resolutions": ["<WIDTHxHEIGHT>"],
+    "fps": [],
+    "durations": [],
+    "codecs": [],
+    "audio": null
+  },
+  "image": {
+    "resolutions": [],
+    "formats": []
+  }
+}

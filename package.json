@@ -1,0 +1,14 @@
+{
+  "name": "under-the-hood",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An agent skill that checks an online service before you pay: what it promises, which model runs underneath, what works on your task, what it costs and who owns the results.",
+  "license": "MIT",
+  "author": "Adam Reznik",
+  "repository": { "type": "git", "url": "https://github.com/arez-xd/under-the-hood.git" },
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "for f in skills/under-the-hood/scripts/*.mjs skills/under-the-hood/scripts/*.js; do node --check \"$f\" || exit 1; done"
+  }
+}

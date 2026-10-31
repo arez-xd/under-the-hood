@@ -1,0 +1,3 @@
+{ "plans": [ { "name": "Monthly", "price": 5, "period": "monthly", "credits": 10 } ],
+  "actions": [ { "name": "image", "credits": 1, "vendorCost": "cheap" } ],
+  "volume": [ { "action": "image", "perMonth": 1 } ] }

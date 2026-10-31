@@ -1,0 +1,10 @@
+Terms of Service. Last updated 1 October 2026.
+6.1 Generated Content. The Service uses third-party models to produce images and video from your prompts ("Generated Content").
+6.3 Use of Generated Content. Subject to applicable law and to the terms of the model providers, you may use Generated Content for personal or commercial purposes.
+6.4 We do not guarantee that Generated Content is exclusive to you or that it qualifies for copyright protection.
+8.2 We will use commercially reasonable efforts to keep the Service available.
+9.1 Subscriptions renew automatically at the end of each 28-day billing cycle unless cancelled.
+9.4 Cancellation takes effect at the end of the current billing cycle, and no prorated refund is provided.
+11.2 We may use your prompts and outputs to improve our models unless you opt out in your account settings.
+15.1 Subscription credits expire at the end of each billing cycle and do not roll over.
+18.1 These Terms are governed by the laws of the Republic of Testland.
