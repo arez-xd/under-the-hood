@@ -146,7 +146,9 @@ Checked with keyed blind tests: the key written before any run, isolated agents,
 | Made-up AI video studio, one-line question (Haiku, round 2b) | 8.5 · 8.5 of 13 | **13 · 13** of 13 |
 | The same, Opus | 10 (round 2) | **13** |
 | Live AI video aggregator, public data only (Haiku) | 5 · 6 of 15 | **12.5 · 9** of 15 |
-| The same, Opus | — | **12.5** |
+| The same, Opus | not run | **12.5** |
+
+**A strong model finds a lot on its own; the skill gives it a plan.** Opus without the skill found 10 of 13, and its route decided what it found: it happened to generate a video and caught the swapped model; it named neither the backend nor the model vendor and put no level on any conclusion. It never compared the service's price with the model vendor's either, and neither did the runs without the skill on the live aggregator. With the skill, every run walks the same seven layers in the same order, measures before it concludes, marks each conclusion direct or indirect, and stops before any spending. The coverage stays the same from run to run, and the checks a model rarely thinks of on its own, the vendor's price on each plan and where a swap would pay, are part of every check.
 
 Found only with the skill: the builder and the backend with their levels, the restarting countdown, the vendor's price against the user's plan, where a swap would pay, analytics loading before consent, the user's likely task. On a real 3D generator, only the runs with the skill found a cancellation clause that needs written consent, purchased credits valid for a year against "never expire", and training on inputs and outputs against "anonymized". Every round, its key, the grades and the limits are in [`examples/blind-test`](examples/blind-test/README.md).
 
