@@ -139,7 +139,7 @@ The verdict of a run with the skill (Opus, condensed from its claims register):
 
 ## Does it work?
 
-Checked with keyed blind tests ([Blind Test](https://github.com/arez-xd/blind-test) method): the key written before any run, isolated agents, the same request with and without the skill. Discriminating items found:
+Checked with keyed blind tests: the key written before any run, isolated agents, the same request with and without the skill. Discriminating items found:
 
 | Target | Without the skill | With the skill |
 |---|---|---|
@@ -252,8 +252,8 @@ It's written for your decision. If you publish it, the skill checks it first: no
 ## Related
 
 - [Product Audit](https://agensi.io/r/ADAMREEL?to=/skills/product-audit): checking a product you own instead? A read-only audit of UX, accessibility, design system and security, every finding with its level of proof.
-- [Blind Test](https://github.com/arez-xd/blind-test): prove an agent skill works; this skill was checked with it.
 - [Design Taste](https://github.com/arez-xd/ux-ui-design-taste): senior design judgment for interfaces built with AI agents.
+- [Design Taste Pro](https://agensi.io/r/ADAMREEL?to=/skills/design-taste-pro): the paid companion to Design Taste, for dashboards, pro tools and iOS screens.
 
 ## License
 
