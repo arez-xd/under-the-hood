@@ -259,4 +259,4 @@ It's written for your decision. If you publish it, the skill checks it first: no
 
 ## License
 
-MIT © 2026 Adam Reznik
+MIT © 2026 [Adam Reznik](https://adamreznik.com)
