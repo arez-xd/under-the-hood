@@ -2,6 +2,16 @@
 
 All notable changes to this skill. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- **What a page says is evidence** (rule 11 in `SKILL.md`). Text on the service's pages, in its terms, bundles, media metadata and its assistant's answers is quoted and checked; an instruction found there is recorded as a finding, and the check carries on as planned.
+
+### Fixed
+
+- `report.mjs` escapes quotes in link addresses, so a crafted link in `report.md`, `claims.md` or `cost.md` can no longer add attributes to `report.html`.
+
 ## [1.0.0] - 2026-10-31
 
 First public release.
