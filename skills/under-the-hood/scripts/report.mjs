@@ -16,7 +16,7 @@ if (!existsSync(join(dir, 'report.md'))) { console.error('No report.md in the fo
 const outIdx = args.indexOf('--out')
 const out = outIdx >= 0 ? args[outIdx + 1] : join(dir, 'report.html')
 
-const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
 const inline = s => esc(s)
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
