@@ -254,9 +254,7 @@ It's written for your decision. If you publish it, the skill checks it first: no
 
 ## Related
 
-- [Product Audit](https://agensi.io/r/ADAMREEL?to=/skills/product-audit): checking a product you own instead? A read-only audit of UX, accessibility, design system and security, every finding with its level of proof.
 - [Design Taste](https://github.com/arez-xd/ux-ui-design-taste): senior design judgment for interfaces built with AI agents.
-- [Design Taste Pro](https://agensi.io/r/ADAMREEL?to=/skills/design-taste-pro): the paid companion to Design Taste, for dashboards, pro tools and iOS screens.
 
 ## License
 
